@@ -1,0 +1,192 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block content %}
+
+    <section class="section section1">
+        <div class="inner">
+
+            <div class="section1Play">
+                <p>Cap DD21.Co opération UHLM</p>
+                <h1>Construisons ensemble</h1>
+                <img class="btnPlay" src="{{ asset('/img/play-icon.svg') }}">
+            </div>
+
+            <div class="section1Hover"></div>
+
+            <div class="section1Video">
+                <video class="videoElement" controls>
+                    <source src="{{ asset('/img/video-projet.mp4') }}" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section2">
+        <div class="inner">
+            
+            <div class="titreCentre">
+                <p>Cap DD21.Co opération UHLM</p>
+                <h2>Cadastre site “21 Try”  </h2>
+            </div>
+
+            <div class="carte">
+                <img src="{{ asset('/img/carte-site.png') }}">
+            </div>
+
+            <div class="section2Legendes">
+                {% for carte in carte1 %}
+                    <div class="legende">
+                        <div class="legendeTitre"><p>{{ carte.titre }}</p></div>
+                        <div class="legendeContenu">
+                            {{ carte.contenu|raw}}
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section3">
+        <div class="inner">
+
+            <di class="section3Illustrations">
+                <div>
+                    <img src="{{ asset('/img/illustration1.png') }}">
+                </div>
+                <div>
+                    <img src="{{ asset('/img/illustration2.png') }}">
+                </div>
+                <div>
+                    <img src="{{ asset('/img/illustration3.png') }}">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section4">
+        <div class="inner">
+
+            <div class="titreCentre">
+                <p>Programme 2007/23 :VRD/BTP/DICT; </p>
+                <h2>“E-Co-Quartier”</h2>
+            </div>
+
+            <div class="carte">
+                <img src="{{ asset('/img/carte-2.png') }}">
+            </div>
+
+            <div class="section4Legendes">
+                {% for carte in carte2 %}
+                    <div class="legende">
+                        <div class="legendeTitre"><p>{{ carte.titre }}</p></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section5">
+        <div class="inner">
+
+            <div class="titreCentre">
+                <p>Projet de rehabilitation 2023 Assciation Syndicale Libre / Lotissement; </p>
+                <h2>“Action coeur de ville”</h2>
+            </div>
+
+            <div class="carte">
+                <img src="{{ asset('/img/carte-3.png') }}">
+            </div>
+
+            <div class="section5Legendes">
+                {% for carte in carte3 %}
+                    <div class="legende">
+                        <div class="legendeTitre"><p>{{ carte.titre }}</p></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section6">
+        <div class="inner">
+
+            <div class="section6Left">
+                <div class="titreCentre">
+                    <p>Lorem ipsum dolor site amet</p>
+                    <h2>Nos services</h2>
+                </div>
+
+                <img src="{{ asset('/img/service1.png') }}">
+            </div>
+
+            <div class="section6Right">
+                <img src="{{ asset('/img/service2.png') }}">
+                
+                <div class="section6RightContent">
+                    {{ render(controller('App\\Controller\\BlockController::view', {id: 2} )) }}
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="section section7">
+        <div class="inner">
+
+            <div class="acteurs">
+
+                <div class="acteur">
+                    <img src="{{ asset('/img/acteur1.png') }}">
+
+                    <div class="acteurHover">
+                        <p>Cabinet notaire</p>
+                        <h3>C. Pechoux</h3>
+                    </div>
+                </div>
+
+                <div class="acteur">
+                    <img src="{{ asset('/img/acteur2.png') }}">
+
+                    <div class="acteurHover">
+                        <p>Géométre</p>
+                        <h3>C. Faure</h3>
+                    </div>
+                </div>
+
+                <div class="acteur">
+                    <img src="{{ asset('/img/acteur3.png') }}">
+
+                    <div class="acteurHover">
+                        <p>Service PLU action coeur de ville 2026</p>
+                        <h3>Mairie de Privas</h3>
+                    </div>
+                </div>
+
+                <div class="acteur">
+                    <img src="{{ asset('/img/acteur4.png') }}">
+
+                    <div class="acteurHover">
+                        <p>21 Try BD du Montoulon</p>
+                        <h3>Prestataire de service rendu aux Membres</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section8">
+        <div class="inner">
+            <img src="{{ asset('/img/logo-footer.png') }}">
+        </div>
+    </section>
+
+{% endblock %}

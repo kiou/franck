@@ -1,0 +1,690 @@
+.navigation{
+    width: 100%;
+    z-index: 20;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.navigation.fixed{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.navigation.fixed .navigationLeft a{
+    padding: 5px 0px 5px 0px;
+}
+
+.navigation.fixed .navigationLeft a img{
+    height: 80px;
+}
+
+.navigation.fixed .navigationRight a{
+    padding: 35px 25px 35px 25px;
+}
+
+.navigation.fixed .navigationRight a:last-child{
+    padding: 35px 0px 35px 25px;
+}
+
+.navigation .inner{
+    max-width: 1720px;
+}
+
+.navigationLeft{
+    float: left;
+    transition: 0.3s all ease-in-out;
+}
+
+.navigationLeft:hover{
+    opacity: 0.5;
+}
+
+.navigationRight{
+    float: right;
+}
+
+.navigationLeft a{
+    display: inline-block;
+    padding: 19px 0px 15px 0px;
+    transition: 0.3s all ease-in-out;
+}
+
+.navigationLeft a img{
+    transition: 0.3s all ease-in-out; 
+    height: 105px;
+}
+
+.navigationRight a{
+    display: inline-block;
+    padding: 60px 25px 60px 25px;
+    color:#C89323;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s all ease-in-out; 
+}
+
+.navigationRight a:last-child{
+    padding: 60px 0px 60px 25px;
+}
+
+.navigationrightmobile{
+    float: right;
+    padding: 36px 0px 0px 0px;
+    display: none;
+    color:#C89323;
+}
+
+.mobilemenucontent{
+    padding: 15px 30px 30px 30px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: -500%;
+    transition: 0.3s all ease-in-out;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.mobilemenucontent.active{
+    top: 100%;
+    opacity: 1;
+}
+
+.mobilemenucontent a{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    color: #C89323;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s all ease-in-out;
+}
+
+.section1 .inner{
+    max-width: 1720px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.section1Video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.section1Hover{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    background: #fff url('../img/background-video-header.png') no-repeat center center;
+    background-size: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.section1Play{
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 3;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.section1Play p, .section1Play h1{
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.section1Play p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section1Play .btnPlay{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: calc(50% - 60px);
+    top: 155px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.btnPlay:hover {
+    transform: scale(1.2);
+}
+
+.section2 .inner{
+    max-width: 1500px;
+    padding: 100px 0px;
+}
+
+.carte{
+    max-width: 1512px;
+    margin: 0px auto 30px auto;
+}
+
+.carte img{
+    max-width: 100%;
+}
+
+.section2Legendes{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.section2Legendes .legende{
+    margin-bottom: 25px;
+}
+
+.legendeTitre{
+    background-color: #ccc;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 20px;
+}
+
+.legendeTitre p{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.legendeContenu{
+    padding-top: 7px;
+    float: left;
+    width: calc(100% - 262px);
+}
+
+.legendeContenu p{margin-bottom: 0px;}
+
+.section2Legendes .legende:nth-child(1) .legendeTitre{
+    background-color: #EAF0EE;
+    border: 1px solid #EAF0EE;
+}
+
+.section2Legendes .legende:nth-child(2) .legendeTitre{
+    background-color: #fff;
+    border: 1px solid #F8C9CF;
+}
+
+.section2Legendes .legende:nth-child(3) .legendeTitre{
+    background-color: #fff;
+    border: 1px solid #D3F5F6;
+}
+
+.section2Legendes .legende:nth-child(4) .legendeTitre{
+    background-color: #F8FCA7;
+    border: 1px solid #F8FCA7;
+}
+
+.section2Legendes .legende:nth-child(5) .legendeTitre{
+    background-color: #00C844;
+    border: 1px solid #00C844;
+}
+
+.section2Legendes .legende:nth-child(6) .legendeTitre{
+    background-color: #8A44C8;
+    border: 1px solid #8A44C8;
+}
+
+.section2Legendes .legende:nth-child(7) .legendeTitre{
+    background-color: #007EED;
+    border: 1px solid #007EED;
+}
+
+.section3 .inner{
+    max-width: 1720px;
+    padding: 100px 0px;
+}
+
+.section3{
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.section3Illustrations{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.section3Illustrations img{
+    max-width: 100%;
+}
+
+.section4 .inner{
+    max-width: 1720px;
+    padding: 100px 0px;
+    background: #fff url('../img/backgtound-carte2.png') no-repeat center center;
+    background-size: cover;
+}
+
+.section4Legendes{
+    max-width: 1170px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.section4Legendes .legendeTitre{
+    float: none;
+    margin: 0px 10px 20px 10px;
+}
+
+.section4Legendes .legendeTitre p{
+    color: #fff;
+}
+
+.section4Legendes .legende:nth-child(1) .legendeTitre{
+    background-color: #F2E500;
+    border: 1px solid #F2E500;
+}
+
+.section4Legendes .legende:nth-child(2) .legendeTitre{
+    background-color: #6E368C;
+    border: 1px solid #6E368C;
+}
+
+.section4Legendes .legende:nth-child(3) .legendeTitre{
+    background-color: #925415;
+    border: 1px solid #925415;
+}
+
+.section4Legendes .legende:nth-child(4) .legendeTitre{
+    background-color: #3363AC;
+    border: 1px solid #3363AC;
+}
+
+.section4Legendes .legende:nth-child(5) .legendeTitre{
+    background-color: #52AE32;
+    border: 1px solid #52AE32;
+}
+
+.section4Legendes .legende:nth-child(6) .legendeTitre{
+    background-color: #EA1B2D;
+    border: 1px solid #EA1B2D;
+}
+
+.section5 .inner{
+    max-width: 1720px;
+    padding: 100px 0px;
+}
+
+.section5Legendes{
+    max-width: 1170px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.section5Legendes .legendeTitre{
+    float: none;
+    margin: 0px 10px 20px 10px;
+}
+
+.section5Legendes .legendeTitre p{
+    color: #fff;
+}
+
+.section5Legendes .legende:nth-child(1) .legendeTitre{
+    background-color: #F2E500;
+    border: 1px solid #F2E500;
+}
+
+.section5Legendes .legende:nth-child(2) .legendeTitre{
+    background-color: #6E368C;
+    border: 1px solid #6E368C;
+}
+
+.section5Legendes .legende:nth-child(3) .legendeTitre{
+    background-color: #925415;
+    border: 1px solid #925415;
+}
+
+.section5Legendes .legende:nth-child(4) .legendeTitre{
+    background-color: #52AE32;
+    border: 1px solid #52AE32;
+}
+
+.section5Legendes .legende:nth-child(5) .legendeTitre{
+    background-color: #EA1B2D;
+    border: 1px solid #EA1B2D;
+}
+
+.section6 .inner {
+    max-width: 1170px;
+    padding-bottom: 100px;
+}
+
+.section6Left{
+    float: left;
+    margin-right: 10px;
+    width: calc(50% - 10px);
+}
+
+.section6Left .titreCentre{
+    text-align: left;
+    padding-top: 140px;
+}
+
+.section6Right{
+    float: right;
+    margin-left: 10px;
+    width: calc(50% - 10px);
+}
+
+.section6Left img, .section6Right img{
+    max-width: 100%;
+}
+
+.section6RightContent{
+    padding: 20px 0px 0px 30px;
+}
+
+.section7 .inner{
+    max-width: 1570px;
+    margin: 0px auto;
+    padding: 60px 0px 100px 0px;
+}
+
+.acteurs{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.acteur{
+    position: relative;
+    width: calc(25% - 20px);
+    margin: 0px 10px;
+}
+
+.acteurHover{
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+    z-index: 2;
+    text-align: center;
+}
+
+.acteurHover h3, .acteurHover p{
+    color: #fff;
+}
+
+.acteurHover h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.acteur img{
+    width: 100%;
+    display: block;
+}
+
+.section8{
+    text-align: center;
+}
+
+.section8 img{max-width: 100%;}
+
+.section9 .inner{
+    padding-top: 100px;
+}
+
+.section9{
+    height: 655px;
+    background: #fff url('../img/background-footer.png') no-repeat bottom center;
+    background-size: cover;
+    position: relative;
+}
+
+.section9Contenu{
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.section9Contenu p{
+    font-weight: 500;
+}
+
+.section9Rseau{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section9Rseau a{
+    font-size: 20px;
+    display: inline-block;
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color:#C89323;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 25px;
+}
+
+.section9Copyright{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 30px 0px;
+    border: 1px solid #D9D9D9;
+}
+
+.section9Copyright a{
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width: 1730px) {
+
+    .navigation .inner{
+        padding: 0px 20px;
+    }
+
+    .section3 .inner {
+        max-width: 1720px;
+        padding: 100px 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .section2Legendes{
+        padding: 0px 20px;
+    }
+
+    .titreCentre{
+        padding: 0px 20px;
+    }
+
+    .section4Legendes{
+        padding: 0px 20px;
+    }
+
+    .section5Legendes{
+        padding: 0px 20px;
+    }
+
+    .section6 .inner {
+        padding: 0px 20px 100px 20px;
+    }
+
+    .section7 .inner {
+        padding: 60px 10px 100px 10px;
+    }
+
+    .section8 .inner{
+        padding: 0px 20px;
+    }
+
+    .section9 .inner {
+        padding: 100px 20px 0px 20px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .section1 .inner {
+        height: 550px;
+    }
+
+    .section1Play {
+        top: 170px;
+    }
+
+    .section1Play .btnPlay {
+        height: 70px;
+        width: 70px;
+        left: calc(50% - 35px);
+        top: 140px;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    .titreCentre h2{
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    .navigation .navigationLeft a{
+        padding: 5px 0px 5px 0px;
+    }
+    
+    .navigation .navigationLeft a img{
+        height: 80px;
+    }
+    
+    .navigation .navigationRight a{
+        padding: 35px 25px 35px 25px;
+    }
+    
+    .navigation .navigationRight a:last-child{
+        padding: 35px 0px 35px 25px;
+    }
+
+    .navigationRight{display: none;}
+
+    .navigationrightmobile{
+        display: block;
+    }
+
+    .acteurs{
+        flex-wrap: wrap;
+    }
+    
+    .acteur{
+        width: calc((100% - 40px) / 2);
+        margin-bottom: 20px;
+    }
+
+    .section9Contenu {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    .legendeTitre{
+        width: 160px;
+        float: none;
+        margin-right: 0px;
+    }
+
+    .legendeContenu{
+        float: none;
+        width:  100%;
+        margin-bottom: 40px;
+    }
+
+    .section3{display: none;}
+
+    .section6Left{
+        float: none;
+        margin-right: 0px;
+        margin-bottom: 35px;
+        width: 100%;
+    }
+    
+    .section6Left .titreCentre{
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .section6Right{
+        float: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .acteur{
+        width: calc(100% - 20px);
+    }
+
+    .legendeTitre {
+        width: calc(100% - 80px);
+    }
+
+    .section4Legendes{
+        display: block;
+    }
+    
+    .section4Legendes .legendeTitre{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .section5Legendes{
+        display: block;
+    }
+    
+    .section5Legendes .legendeTitre{
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .titreCentre h2{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+}
